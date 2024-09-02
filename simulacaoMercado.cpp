@@ -6,7 +6,7 @@
 #include <locale.h> //biblioteca para colocar acentua��o
 #define TF 10
 
-//ola
+//ola mundo
 
 struct TpData
 {
