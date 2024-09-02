@@ -3,10 +3,10 @@
 #include <conio2.h>
 #include <ctype.h>
 #include <stdlib.h>
-#include <locale.h> //biblioteca para colocar acentuação
+#include <locale.h> //biblioteca para colocar acentuaï¿½ï¿½o
 #define TF 10
 
-
+//ola
 
 struct TpData
 {
@@ -252,17 +252,17 @@ char MenuProd(void)
 	gotoxy(4,7);
 	printf("### MENU PRODUTOS ###");
 	gotoxy(3,9);
-	printf("[A]- Alteração");
+	printf("[A]- Alteraï¿½ï¿½o");
 	gotoxy(3,10);
 	printf("[B]- Cadastro");
 	gotoxy(3,11);
 	printf("[C]- Consulta");
 	gotoxy(3,12);
-	printf("[D]- Exclusão");
+	printf("[D]- Exclusï¿½o");
 	gotoxy(3,13);
-	printf("[E]- Relatório Simples");
+	printf("[E]- Relatï¿½rio Simples");
 	gotoxy(3,14);
-	printf("[F]- Aumentar Preço");
+	printf("[F]- Aumentar Preï¿½o");
 	gotoxy(3,18);
 	printf("[ESC]- SAIR");
 	return toupper(getch());
@@ -274,15 +274,15 @@ char MenuForn(void)
 	gotoxy(5,7);
 	printf("# MENU FORNECEDORES #");
 	gotoxy(3,9);
-	printf("[A]- Alteração");
+	printf("[A]- Alteraï¿½ï¿½o");
 	gotoxy(3,11);
 	printf("[B]- Cadastro");
 	gotoxy(3,13);
 	printf("[C]- Consulta");
 	gotoxy(3,15);
-	printf("[D]- Exclusão");
+	printf("[D]- Exclusï¿½o");
 	gotoxy(3,17);
-	printf("[E]- Relatório Simples");
+	printf("[E]- Relatï¿½rio Simples");
 	gotoxy(3,20);
 	printf("[ESC]- SAIR");
 	return toupper(getch());
@@ -295,15 +295,15 @@ char MenuCli(void)
 	gotoxy(4,7);
 	printf("### MENU CLIENTES ###");
 	gotoxy(3,9);
-	printf("[A]- Alteração");
+	printf("[A]- Alteraï¿½ï¿½o");
 	gotoxy(3,11);
 	printf("[B]- Cadastro");
 	gotoxy(3,13);
 	printf("[C]- Consulta");
 	gotoxy(3,15);
-	printf("[D]- Exclusão");
+	printf("[D]- Exclusï¿½o");
 	gotoxy(3,17);
-	printf("[E]- Relatório Simples");
+	printf("[E]- Relatï¿½rio Simples");
 	gotoxy(3,20);
 	printf("[ESC]- SAIR");
 	return toupper(getch());
@@ -319,7 +319,7 @@ char MenuVendas(void)
 	gotoxy(3,11);
 	printf("[B]- Excluir Venda");
 	gotoxy(3,13);
-	printf("[C]- Relatório");
+	printf("[C]- Relatï¿½rio");
 	gotoxy(3,18);
 	printf("[ESC]- SAIR");
 	return toupper(getch());
@@ -510,7 +510,7 @@ void Cadastro(TpProdutos Prod[TF],TpFornecedores Forn[TF], int &tlp, int &tlf)
 	gotoxy(40,6);
 	printf("### CADASTRO PPRODUTOS ###");
 	gotoxy(30,8);
-	printf("Digite o código do produto:");
+	printf("Digite o cï¿½digo do produto:");
 	gotoxy(30,9);
 	scanf("%d",&auxcod);
 	while(auxcod != 0 && tlp < TF)
@@ -519,7 +519,7 @@ void Cadastro(TpProdutos Prod[TF],TpFornecedores Forn[TF], int &tlp, int &tlf)
 		if(i == -1)
 		{
 			gotoxy(30,10);
-			printf("Digite o código do fornecedor:");
+			printf("Digite o cï¿½digo do fornecedor:");
 			gotoxy(30,11);
 			scanf("%d",&auxforn);
 			j=BuscaForn(Forn,tlf,auxforn);
@@ -540,7 +540,7 @@ void Cadastro(TpProdutos Prod[TF],TpFornecedores Forn[TF], int &tlp, int &tlf)
 					{
 						Limpar(28,6,79,21);
 						gotoxy(30,7);
-						printf("Digite a descrição:");
+						printf("Digite a descriï¿½ï¿½o:");
 						gotoxy(30,8);
 						fflush(stdin);
 						gets(auxdescr);
@@ -549,7 +549,7 @@ void Cadastro(TpProdutos Prod[TF],TpFornecedores Forn[TF], int &tlp, int &tlf)
 						gotoxy(30,10);
 						scanf("%d",&auxest);
 						gotoxy(30,11);
-						printf("Digite o Preço:");
+						printf("Digite o Preï¿½o:");
 						gotoxy(30,12);
 						scanf("%f",&auxpre);
 						gotoxy(30,13);
@@ -599,7 +599,7 @@ void Cadastro(TpProdutos Prod[TF],TpFornecedores Forn[TF], int &tlp, int &tlf)
 		
 				Limpar(28,6,79,21);
 				gotoxy(30,7);
-				printf("Digite a descrição:");
+				printf("Digite a descriï¿½ï¿½o:");
 				gotoxy(30,8);
 				fflush(stdin);
 				gets(auxdescr);
@@ -608,7 +608,7 @@ void Cadastro(TpProdutos Prod[TF],TpFornecedores Forn[TF], int &tlp, int &tlf)
 				gotoxy(30,10);
 				scanf("%d",&auxest);
 				gotoxy(30,11);
-				printf("Digite o Preço:");
+				printf("Digite o Preï¿½o:");
 				gotoxy(30,12);
 				scanf("%f",&auxpre);
 				gotoxy(30,13);
@@ -648,7 +648,7 @@ void Cadastro(TpProdutos Prod[TF],TpFornecedores Forn[TF], int &tlp, int &tlf)
 		else
 		{
 			gotoxy(13,23);
-			printf("Produto Já Cadastrado!");
+			printf("Produto Jï¿½ Cadastrado!");
 			
 		}
 		
@@ -656,7 +656,7 @@ void Cadastro(TpProdutos Prod[TF],TpFornecedores Forn[TF], int &tlp, int &tlf)
 		gotoxy(40,6);
 		printf("### CADASTRO PRODUTOS ###");
 		gotoxy(30,8);
-		printf("Digite o código do produto:");
+		printf("Digite o cï¿½digo do produto:");
 		gotoxy(30,9);
 		scanf("%d",&auxcod);
 		
@@ -739,7 +739,7 @@ int CadastroForn(TpFornecedores Forn[TF],int &tlf, int aux)
 		gotoxy(40,6);
 		printf("### Cadastro Fornecedor ###");
 		gotoxy(30,8);
-		printf("Digite o código do fornecedor:");
+		printf("Digite o cï¿½digo do fornecedor:");
 		gotoxy(30,9);
 		scanf("%d",&auxcod);
 		while(auxcod > 0 && tlf < TF)
@@ -783,7 +783,7 @@ int CadastroForn(TpFornecedores Forn[TF],int &tlf, int aux)
 			else
 			{
 				gotoxy(13,23);
-				printf("Fornecedor já cadastrado");
+				printf("Fornecedor jï¿½ cadastrado");
 				getch();
 				LimparMensagem();
 			}
@@ -791,7 +791,7 @@ int CadastroForn(TpFornecedores Forn[TF],int &tlf, int aux)
 				
 			Limpar(28,7,79,21);
 			gotoxy(30,8);
-			printf("Digite o código do fornecedor:");
+			printf("Digite o cï¿½digo do fornecedor:");
 			gotoxy(30,9);
 			scanf("%d",&auxcod);
 		
@@ -975,7 +975,7 @@ void CadastroCli(TpClientes cli[TF], int &tlc)
 			else
 			{
 				gotoxy(13,23);
-				printf("Cliente já cadastrado!");
+				printf("Cliente jï¿½ cadastrado!");
 				getch();
 				LimparMensagem();
 			}	
@@ -983,7 +983,7 @@ void CadastroCli(TpClientes cli[TF], int &tlc)
 		else
 		{
 			gotoxy(13,23);
-			printf("CPF Inválido!");
+			printf("CPF Invï¿½lido!");
 			getch();
 			LimparMensagem();
 		}
@@ -1027,7 +1027,7 @@ void CadastroVendas(TpVendas vendas[TF],int &tlv,TpVendasProduto venpro[TF], int
 		if(i == -1)
 		{
 			gotoxy(13,23);
-			printf("Cliente não encontrado!");
+			printf("Cliente nï¿½o encontrado!");
 			getch();
 			LimparMensagem();
 			
@@ -1035,7 +1035,7 @@ void CadastroVendas(TpVendas vendas[TF],int &tlv,TpVendasProduto venpro[TF], int
 		else
 		{
 			gotoxy(30,10);
-			printf("Digite o código do Produto:");
+			printf("Digite o cï¿½digo do Produto:");
 			gotoxy(30,11);
 			scanf("%d",&auxprod);
 			
@@ -1047,7 +1047,7 @@ void CadastroVendas(TpVendas vendas[TF],int &tlv,TpVendasProduto venpro[TF], int
 				if(j == -1)
 				{
 					gotoxy(13,23);
-					printf("Produto não encontrado!");
+					printf("Produto nï¿½o encontrado!");
 					LimparMensagem();
 					Limpar(28,7,79,21);
 					getch();
@@ -1065,7 +1065,7 @@ void CadastroVendas(TpVendas vendas[TF],int &tlv,TpVendasProduto venpro[TF], int
 						if(toupper(getch()) == 'S')
 						{
 							gotoxy(13,23);
-							printf("Venda Concluída!");
+							printf("Venda Concluï¿½da!");
 							venpro[tlvp].CodVenda=tlv+1;
 							venpro[tlvp].CodProd= prod[j].CodProd;
 							venpro[tlvp].Qtde= auxqntd;
@@ -1095,7 +1095,7 @@ void CadastroVendas(TpVendas vendas[TF],int &tlv,TpVendasProduto venpro[TF], int
 				if(tlv < TF && tlvp < TF)
 				{
 					gotoxy(30,8);
-					printf("Digite o código do Produto:");
+					printf("Digite o cï¿½digo do Produto:");
 					gotoxy(30,9);
 					scanf("%d",&auxprod);
 				}
@@ -1160,7 +1160,7 @@ int VerificaData(int auxd, int auxm, int auxa)
 			{
 				
 				gotoxy(13,23);
-				printf("Ano Inválido!");
+				printf("Ano Invï¿½lido!");
 				LimparMensagem();
 				return -1;
 			}
@@ -1169,7 +1169,7 @@ int VerificaData(int auxd, int auxm, int auxa)
 		{
 			
 			gotoxy(13,23);
-			printf("Mes Inválido!");
+			printf("Mes Invï¿½lido!");
 			LimparMensagem();
 			return -1;
 		}
@@ -1178,7 +1178,7 @@ int VerificaData(int auxd, int auxm, int auxa)
 	{
 		
 		gotoxy(13,23);
-		printf("Dia Inválido!");
+		printf("Dia Invï¿½lido!");
 		LimparMensagem();
 		return -1;
 	}
@@ -1202,14 +1202,14 @@ void CupomFiscal(TpVendas vendas[TF],TpVendasProduto venpro[TF], int tlv , int t
 		gotoxy(30,9);
 		printf("CPF Cliente: %s",vendas[tlv].CPFCli);
 		gotoxy(30,10);
-		printf("Código De Venda: %d", vendas[tlv].CodVenda);
+		printf("Cï¿½digo De Venda: %d", vendas[tlv].CodVenda);
 		gotoxy(30,11);
 		printf("Produtos:");
 		a=BuscaVenda(venpro, tlvp, aux );
 		if( a == -1)
 		{
 			gotoxy(13,23);
-			printf("Venda não realizada!");	
+			printf("Venda nï¿½o realizada!");	
 			getch();
 			LimparMensagem();
 		}
@@ -1224,7 +1224,7 @@ void CupomFiscal(TpVendas vendas[TF],TpVendasProduto venpro[TF], int tlv , int t
 				gotoxy(30,12);
 				printf("%d ",venpro[b].CodProd);
 				gotoxy(30,13);
-				printf("Descrição: %s",prod[i].Descr);
+				printf("Descriï¿½ï¿½o: %s",prod[i].Descr);
 				gotoxy(30,14);
 				printf("Quantidade Comprada: %d",venpro[b].Qtde);
 				gotoxy(30,15);
@@ -1233,22 +1233,22 @@ void CupomFiscal(TpVendas vendas[TF],TpVendasProduto venpro[TF], int tlv , int t
 				if(b==min  && x > 1)		
 				{
 					gotoxy(30,17);
-					printf("[P] Próxima Pagina");
+					printf("[P] Prï¿½xima Pagina");
 						
 				}
 					
 				if(b>min && b < max -1)
 				{
 					gotoxy(30,17);
-					printf("[P]- Próxima Pagina");
+					printf("[P]- Prï¿½xima Pagina");
 					gotoxy(30,18);
-					printf("[A]- Página Anterior");
+					printf("[A]- Pï¿½gina Anterior");
 				}
 				
 				if(b == max -1 && x > 1)
 				{
 					gotoxy(30,17);
-					printf("[A]- Página Anterior");
+					printf("[A]- Pï¿½gina Anterior");
 				}
 				
 				gotoxy(30,19);
@@ -1289,14 +1289,14 @@ void CupomFiscal(TpVendas vendas[TF],TpVendasProduto venpro[TF], int tlv , int t
 	else
 	{
 		gotoxy(30,9);
-		printf("Código De Venda: %d", vendas[tlv].CodVenda);
+		printf("Cï¿½digo De Venda: %d", vendas[tlv].CodVenda);
 		gotoxy(30,10);
 		printf("Produtos:");
 		a=BuscaVenda(venpro, tlvp, aux );
 		if( a == -1)
 		{
 			gotoxy(13,23);
-			printf("Venda não realizada!");	
+			printf("Venda nï¿½o realizada!");	
 			getch();
 			LimparMensagem();
 		}
@@ -1311,7 +1311,7 @@ void CupomFiscal(TpVendas vendas[TF],TpVendasProduto venpro[TF], int tlv , int t
 				gotoxy(30,11);
 				printf("%d ",venpro[b].CodProd);
 				gotoxy(30,12);
-				printf("Descrição: %s",prod[i].Descr);
+				printf("Descriï¿½ï¿½o: %s",prod[i].Descr);
 				gotoxy(30,13);
 				printf("Quantidade Comprada: %d",venpro[b].Qtde);
 				gotoxy(30,14);
@@ -1320,22 +1320,22 @@ void CupomFiscal(TpVendas vendas[TF],TpVendasProduto venpro[TF], int tlv , int t
 				if(b==min  && x > 1)		
 				{
 					gotoxy(30,17);
-					printf("[P] Próxima Pagina");
+					printf("[P] Prï¿½xima Pagina");
 						
 				}
 					
 				if(b>min && b < max -1)
 				{
 					gotoxy(30,17);
-					printf("[P]- Próxima Pagina");
+					printf("[P]- Prï¿½xima Pagina");
 					gotoxy(30,18);
-					printf("[A]- Página Anterior");
+					printf("[A]- Pï¿½gina Anterior");
 				}
 				
 				if(b == max -1 && x > 1)
 				{
 					gotoxy(30,17);
-					printf("[A]- Página Anterior");
+					printf("[A]- Pï¿½gina Anterior");
 				}
 				
 				
@@ -1394,16 +1394,16 @@ void AumentaPreco(TpProdutos prod[TF], int tlp , TpFornecedores forn[TF] , int t
 	int auxcod,i;
 	float aumento;
 	gotoxy(40,6);
-	printf("### AUMENTAR PREÇO ###");
+	printf("### AUMENTAR PREï¿½O ###");
 	gotoxy(30,8);
-	printf("Digite o código do Fornecedor:");
+	printf("Digite o cï¿½digo do Fornecedor:");
 	gotoxy(30,9);
 	scanf("%d",&auxcod);
 	i=BuscaForn(forn,tlf,auxcod);
 	if(i == -1)
 	{
 		gotoxy(13,23);
-		printf("Fornecedor não encontrado!");
+		printf("Fornecedor nï¿½o encontrado!");
 		getch();
 		LimparMensagem();
 		Limpar(28,5,79,21);
@@ -1412,7 +1412,7 @@ void AumentaPreco(TpProdutos prod[TF], int tlp , TpFornecedores forn[TF] , int t
 	else
 	{
 		gotoxy(30,10);
-		printf("Código Fornecedor: %d",forn[i].CodForn);
+		printf("Cï¿½digo Fornecedor: %d",forn[i].CodForn);
 		gotoxy(30,11);
 		printf("Nome Fornecedor: %s",forn[i].NomeForn);
 		gotoxy(30,12);
@@ -1465,7 +1465,7 @@ void ExcluirProd(TpProdutos prod[TF], int &tlp,TpVendasProduto venpro[TF], int t
 		gotoxy(40,6);
 		printf("### EXCLUIR PRODUTO ###");
 		gotoxy(30,8);
-		printf("Digite o código do produto que excluirá:");
+		printf("Digite o cï¿½digo do produto que excluirï¿½:");
 		gotoxy(30,9);
 		scanf("%d",&auxcod);
 		while(auxcod > 0 && tlp >0)
@@ -1474,7 +1474,7 @@ void ExcluirProd(TpProdutos prod[TF], int &tlp,TpVendasProduto venpro[TF], int t
 			if( i == -1)
 			{
 				gotoxy(13,23);
-				printf("Produto não encontrado!");
+				printf("Produto nï¿½o encontrado!");
 				getch();
 				LimparMensagem();
 				
@@ -1486,7 +1486,7 @@ void ExcluirProd(TpProdutos prod[TF], int &tlp,TpVendasProduto venpro[TF], int t
 				if(a != -1)
 				{
 					gotoxy(13,23);
-					printf("Produto não pode ser excluido!");
+					printf("Produto nï¿½o pode ser excluido!");
 					getch();
 					LimparMensagem();	
 				}
@@ -1494,7 +1494,7 @@ void ExcluirProd(TpProdutos prod[TF], int &tlp,TpVendasProduto venpro[TF], int t
 				else
 				{
 					gotoxy(30,10);
-					printf("Deseja Concluir a exclusão?[S/N]");
+					printf("Deseja Concluir a exclusï¿½o?[S/N]");
 					if(toupper(getch())== 'S')
 						VarreduraProd(prod,tlp,i);
 				}
@@ -1502,7 +1502,7 @@ void ExcluirProd(TpProdutos prod[TF], int &tlp,TpVendasProduto venpro[TF], int t
 			}
 			Limpar(28,7,79,21);
 			gotoxy(30,8);
-			printf("Digite o código do produto excluirá:");
+			printf("Digite o cï¿½digo do produto excluirï¿½:");
 			gotoxy(30,9);
 			scanf("%d",&auxcod);
 			
@@ -1535,7 +1535,7 @@ void VarreduraProd(TpProdutos prod[TF], int &tlp, int pos)
 	}
 	tlp--;
 	gotoxy(13,23);
-	printf("Produto Excluído com sucesso!");
+	printf("Produto Excluï¿½do com sucesso!");
 	getch();
 	LimparMensagem();
 	
@@ -1558,7 +1558,7 @@ void ExcluirForn(TpFornecedores forn[TF], int &tlf, TpProdutos prod[TF], int tlp
 		gotoxy(40,6);
 		printf("### EXCLUIR FORNECEDOR ###");
 		gotoxy(30,8);
-		printf("Digite o código do fornecedor que excluirá:");
+		printf("Digite o cï¿½digo do fornecedor que excluirï¿½:");
 		gotoxy(30,9);
 		scanf("%d",&auxcod);
 		while(auxcod > 0 && tlf >0)
@@ -1567,7 +1567,7 @@ void ExcluirForn(TpFornecedores forn[TF], int &tlf, TpProdutos prod[TF], int tlp
 			if(b == -1)
 			{
 				gotoxy(13,23);
-				printf("Fornecedor não encontrado!");
+				printf("Fornecedor nï¿½o encontrado!");
 				getch();
 				LimparMensagem();
 				
@@ -1579,7 +1579,7 @@ void ExcluirForn(TpFornecedores forn[TF], int &tlf, TpProdutos prod[TF], int tlp
 				if(a == -1)
 				{
 					gotoxy(13,23);
-					printf("Esse Fornecedor não pode ser excluído!");
+					printf("Esse Fornecedor nï¿½o pode ser excluï¿½do!");
 					getch();
 					LimparMensagem();			
 				}
@@ -1593,7 +1593,7 @@ void ExcluirForn(TpFornecedores forn[TF], int &tlf, TpProdutos prod[TF], int tlp
 					gotoxy(30,12);
 					printf("Cidade Fornecedor: %s",forn[b].Cidade);
 					gotoxy(30,13);
-					printf("Deseja confirmar a exclusão? [S/N]");
+					printf("Deseja confirmar a exclusï¿½o? [S/N]");
 					if(toupper(getch())=='S')
 					{
 						for(i=0 ; i<tlp ; i++)
@@ -1602,7 +1602,7 @@ void ExcluirForn(TpFornecedores forn[TF], int &tlf, TpProdutos prod[TF], int tlp
 								 
 						ExcluirFornecedor(forn,tlf,b);
 						gotoxy(13,23);
-						printf("Fornecedor Excluído!");	
+						printf("Fornecedor Excluï¿½do!");	
 						getch();
 						LimparMensagem();
 					}
@@ -1611,7 +1611,7 @@ void ExcluirForn(TpFornecedores forn[TF], int &tlf, TpProdutos prod[TF], int tlp
 			}
 			Limpar(28,7,79,21);
 			gotoxy(30,8);
-			printf("Digite o código do fornecedor que excluirá:");
+			printf("Digite o cï¿½digo do fornecedor que excluirï¿½:");
 			gotoxy(30,9);
 			scanf("%d",&auxcod);	
 		}
@@ -1680,7 +1680,7 @@ void ExclusaoCliente(TpClientes cli[TF], int &tlc)
 			if(a == -1)
 			{
 				gotoxy(13,23);
-				printf("Cliente não encontrado!");
+				printf("Cliente nï¿½o encontrado!");
 				getch();
 				LimparMensagem();
 			}
@@ -1689,7 +1689,7 @@ void ExclusaoCliente(TpClientes cli[TF], int &tlc)
 				if(cli[a].QtdeCompras > 0)
 				{
 					gotoxy(13,23);
-					printf("Não é possivel excluir esse cliente!");	
+					printf("Nï¿½o ï¿½ possivel excluir esse cliente!");	
 					getch();
 					LimparMensagem();
 				}
@@ -1697,11 +1697,11 @@ void ExclusaoCliente(TpClientes cli[TF], int &tlc)
 				else
 				{
 					gotoxy(30,10);
-					printf("Deseja concluir a exclusão?[S/N]");
+					printf("Deseja concluir a exclusï¿½o?[S/N]");
 					if(toupper(getch()) == 'S')
 					{
 						gotoxy(13,23);
-						printf("Cliente Excluído com sucesso!");
+						printf("Cliente Excluï¿½do com sucesso!");
 						ExcluiCliente(cli,tlc,a);
 						getch();
 						LimparMensagem();
@@ -1745,7 +1745,7 @@ void ConsultarProduto(TpProdutos prod[TF], int tlp)
 		gotoxy(40,6);
 		printf("### CONSULTAR PRODUTO ###");
 		gotoxy(30,8);
-		printf("Digite o código do produto que deseja:");
+		printf("Digite o cï¿½digo do produto que deseja:");
 		gotoxy(30,9);
 		scanf("%d",&auxcod);
 		while(auxcod > 0 )
@@ -1764,13 +1764,13 @@ void ConsultarProduto(TpProdutos prod[TF], int tlp)
 				gotoxy(29,10);
 				printf(" Detalhes do Produto ");
 				gotoxy(30,11);
-                printf("Código: %d",prod[a].CodProd);
+                printf("Cï¿½digo: %d",prod[a].CodProd);
                 gotoxy(30,12);
-                printf("Descrição: %s",prod[a].Descr);
+                printf("Descriï¿½ï¿½o: %s",prod[a].Descr);
                 gotoxy(30,13);
                 printf("Estoque: %d",prod[a].Estoque);
                 gotoxy(30,14);
-                printf("Preço: R$ %.2f",prod[a].Preco);
+                printf("Preï¿½o: R$ %.2f",prod[a].Preco);
                 gotoxy(30,15);
                 printf("%d/",prod[a].DtValidade.Dia);
                 gotoxy(33,15);
@@ -1778,13 +1778,13 @@ void ConsultarProduto(TpProdutos prod[TF], int tlp)
                 gotoxy(35,15);
                 printf("%d",prod[a].DtValidade.Ano);
                 gotoxy(30,16);
-                printf("Código Fornecedor: %d",prod[a].CodForn);
+                printf("Cï¿½digo Fornecedor: %d",prod[a].CodForn);
                 getch();
          	}
                
 			Limpar(28,7,79,21);
 			gotoxy(30,8);
-			printf("Digite o código do produto que deseja:");
+			printf("Digite o cï¿½digo do produto que deseja:");
 			gotoxy(30,9);
 			scanf("%d",&auxcod);
 		}
@@ -1811,7 +1811,7 @@ void ConsultarFornecedor(TpFornecedores forn[TF], int tlf)
 		gotoxy(40,6);
 		printf("### CONSULTAR FORNECEDOR ###");
 		gotoxy(30,8);
-		printf("Digite o código do fornecedor:");
+		printf("Digite o cï¿½digo do fornecedor:");
 		gotoxy(30,9);
 		scanf("%d",&auxcod);
 		while(auxcod > 0 )
@@ -1820,7 +1820,7 @@ void ConsultarFornecedor(TpFornecedores forn[TF], int tlf)
 			if(a == -1)
 			{
 				gotoxy(13,23);
-				printf("Fornecedor não encontrado!");
+				printf("Fornecedor nï¿½o encontrado!");
 				getch();
 				LimparMensagem();
 			}
@@ -1830,7 +1830,7 @@ void ConsultarFornecedor(TpFornecedores forn[TF], int tlf)
 				gotoxy(30,10);
 				printf("Detalhes do Fornecedor:");
 				gotoxy(30,11);
-                printf("Código do Fornecedor: %d",forn[a].CodForn);
+                printf("Cï¿½digo do Fornecedor: %d",forn[a].CodForn);
                 gotoxy(30,12);
                 printf("Nome: %s",forn[a].NomeForn);
                 gotoxy(30,13);
@@ -1841,7 +1841,7 @@ void ConsultarFornecedor(TpFornecedores forn[TF], int tlf)
                 
 			Limpar(28,7,79,21);
 			gotoxy(30,8);  
-			printf("Digite o código do Fornecedor:");
+			printf("Digite o cï¿½digo do Fornecedor:");
 			gotoxy(30,9);
 			scanf("%d",&auxcod);
 		}
@@ -1880,7 +1880,7 @@ void ConsultarCliente(TpClientes cli[TF], int tlc)
 			if(a == -1)
 			{
 				gotoxy(13,23);
-				printf("Cliente não encontrado!");
+				printf("Cliente nï¿½o encontrado!");
 				getch();
 				LimparMensagem();
 			}
@@ -1920,7 +1920,7 @@ void RelatorioProdutos(TpProdutos prod[TF], int tlp,TpFornecedores forn[TF], int
 	if(tlp == 0)
 	{
 		gotoxy(13,23);
-		printf("Nao há produtos cadastrados!");
+		printf("Nao hï¿½ produtos cadastrados!");
 		getch();
 		LimparMensagem();
 	}
@@ -1931,13 +1931,13 @@ void RelatorioProdutos(TpProdutos prod[TF], int tlp,TpFornecedores forn[TF], int
 		gotoxy(30,7);
 		printf("Detalhes do Produto:");
 		gotoxy(30,8);
-        printf("Código: %d",prod[i].CodProd);
+        printf("Cï¿½digo: %d",prod[i].CodProd);
         gotoxy(30,9);
-        printf("Descrição: %s",prod[i].Descr);
+        printf("Descriï¿½ï¿½o: %s",prod[i].Descr);
         gotoxy(30,10);
         printf("Estoque: %d",prod[i].Estoque);
         gotoxy(30,11);
-        printf("Preço: R$ %.2f",prod[i].Preco);
+        printf("Preï¿½o: R$ %.2f",prod[i].Preco);
         gotoxy(30,12);
         printf("Data de Validade: %d/",prod[i].DtValidade.Dia);
         gotoxy(51,12);
@@ -1945,7 +1945,7 @@ void RelatorioProdutos(TpProdutos prod[TF], int tlp,TpFornecedores forn[TF], int
         gotoxy(53,12);
         printf("%d",prod[i].DtValidade.Ano);
         gotoxy(30,13);
-        printf("Código Fornecedor: %d",prod[i].CodForn);
+        printf("Cï¿½digo Fornecedor: %d",prod[i].CodForn);
         auxforn=prod[i].CodForn;
         a=BuscaForn(forn,tlf,auxforn);
         	if(a != -1)
@@ -1958,21 +1958,21 @@ void RelatorioProdutos(TpProdutos prod[TF], int tlp,TpFornecedores forn[TF], int
         if(i==0  && tlp > 1)
 		{
 			gotoxy(30,16);
-			printf("[P] Próxima Pagina");
+			printf("[P] Prï¿½xima Pagina");
 		}		
 			
 		if(i>0 && i < tlp -1)
 		{
 			gotoxy(30,16);
-			printf("[P]- Próxima Pagina");
+			printf("[P]- Prï¿½xima Pagina");
 			gotoxy(30,17);
-			printf("[A]- Página Anterior");
+			printf("[A]- Pï¿½gina Anterior");
 		}
 		
 		if(i == tlp -1)
 		{
 			gotoxy(30,16);
-			printf("[A]- Página Anterior");
+			printf("[A]- Pï¿½gina Anterior");
 		}
 		
 		
@@ -2023,7 +2023,7 @@ void RelatorioFornecedores(TpFornecedores forn[TF], int tlf)
 	if(tlf == 0)
 	{
 		gotoxy(13,23);
-		printf("Não há fornecedores cadastrados!");
+		printf("Nï¿½o hï¿½ fornecedores cadastrados!");
 		getch();
 		LimparMensagem();
 	}
@@ -2034,7 +2034,7 @@ void RelatorioFornecedores(TpFornecedores forn[TF], int tlf)
 		gotoxy(30,8);
 		printf("Detalhes do Fornecedor:");
 		gotoxy(30,8);
-        printf("Código do Fornecedor: %d",forn[i].CodForn);
+        printf("Cï¿½digo do Fornecedor: %d",forn[i].CodForn);
         gotoxy(30,9);
         printf("Nome: %s",forn[i].NomeForn);
         gotoxy(30,10);
@@ -2049,15 +2049,15 @@ void RelatorioFornecedores(TpFornecedores forn[TF], int tlf)
 		if(i>0 && i < tlf -1)
 		{
 			gotoxy(30,12);
-			printf("[P]- Próxima Pagina");
+			printf("[P]- Prï¿½xima Pagina");
 			gotoxy(30,13);
-			printf("[A]- Página Anterior");
+			printf("[A]- Pï¿½gina Anterior");
 		}
 		
 		if(i == tlf -1)
 		{
 			gotoxy(30,12);
-			printf("[A]- Página Anterior");
+			printf("[A]- Pï¿½gina Anterior");
 		}
 			
 		
@@ -2102,7 +2102,7 @@ void RelatorioClientes(TpClientes cli[TF], int tlc)
 	if(tlc == 0)
 	{
 		gotoxy(13,23);
-		printf("Não há clientes cadastrados!");
+		printf("Nï¿½o hï¿½ clientes cadastrados!");
 		getch();
 		LimparMensagem();
 		
@@ -2125,21 +2125,21 @@ void RelatorioClientes(TpClientes cli[TF], int tlc)
         if(i==0)		
         {
         	gotoxy(30,14);
-			printf("[P] Próxima Pagina");	
+			printf("[P] Prï¿½xima Pagina");	
 		}
 			
 		if(i>0 && i < tlc -1)
 		{
 			gotoxy(30,14);
-			printf("[P]- Próxima Pagina");
+			printf("[P]- Prï¿½xima Pagina");
 			gotoxy(30,15);
-			printf("[A]- Página Anterior");
+			printf("[A]- Pï¿½gina Anterior");
 		}
 	 
 		if(i == tlc -1)
 		{
 			gotoxy(30,14);
-			printf("[A]- Página Anterior");
+			printf("[A]- Pï¿½gina Anterior");
 		}
 			
 		
@@ -2198,9 +2198,9 @@ void RelatorioVendas(TpVendas vendas[TF], int tlv, TpVendasProduto venpro[TF], i
 		while( i < tlv && op!='X')
 		{
 			gotoxy(40,6);
-			printf("### RELATÓRIO DE VENDAS ###");
+			printf("### RELATï¿½RIO DE VENDAS ###");
 			gotoxy(30,8);
-			printf("Código de Venda: %d",vendas[i].CodVenda);
+			printf("Cï¿½digo de Venda: %d",vendas[i].CodVenda);
 			gotoxy(30,9);
 			printf("Produtos:");
 			aux=vendas[i].CodVenda;
@@ -2216,14 +2216,14 @@ void RelatorioVendas(TpVendas vendas[TF], int tlv, TpVendasProduto venpro[TF], i
 	        
 	        	{
 	        		gotoxy(30,10);
-	        		printf("Código: %d",venpro[a].CodProd);
+	        		printf("Cï¿½digo: %d",venpro[a].CodProd);
 	        		auxcod=venpro[a].CodProd;
 	        		
 					b=BuscaCod(prod, tlp, auxcod);
 	        		if(b!= -1)
 	        		{
 	        			gotoxy(30,11);
-						printf("Descrição: %s",prod[b].Descr);	
+						printf("Descriï¿½ï¿½o: %s",prod[b].Descr);	
 					}	
 	        		gotoxy(30,12);
 	       			printf("Quantidade: %d",venpro[a].Qtde);
@@ -2244,22 +2244,22 @@ void RelatorioVendas(TpVendas vendas[TF], int tlv, TpVendasProduto venpro[TF], i
 					if(a==min  && auxqntd > 1)		
 					{
 						gotoxy(30,17);
-						printf("[P] Próxima Pagina");
+						printf("[P] Prï¿½xima Pagina");
 							
 					}
 						
 					if(a>min && a < max -1)
 					{
 						gotoxy(30,17);
-						printf("[P]- Próxima Pagina");
+						printf("[P]- Prï¿½xima Pagina");
 						gotoxy(30,18);
-						printf("[A]- Página Anterior");
+						printf("[A]- Pï¿½gina Anterior");
 					}
 					
 					if(a == max -1 && auxqntd > 1)
 					{
 						gotoxy(30,17);
-						printf("[A]- Página Anterior");
+						printf("[A]- Pï¿½gina Anterior");
 					}
 					
 					LimparLinha(19);
@@ -2321,14 +2321,14 @@ void RelatorioVendas(TpVendas vendas[TF], int tlv, TpVendasProduto venpro[TF], i
 			   {
 			   		LimparLinha(17);
 					gotoxy(30,17);
-				   	printf("[P] Próxima venda");
+				   	printf("[P] Prï¿½xima venda");
 			   }	
 			
 			if(i>0 && i < tlv -1)
 			{
 				LimparLinha(17);
 				gotoxy(30,17);
-				printf("[P]- Próxima venda");
+				printf("[P]- Prï¿½xima venda");
 				LimparLinha(18);
 				gotoxy(30,18);
 				printf("[A]- Venda Anterior");
@@ -2402,7 +2402,7 @@ void ExcluirVenda(TpVendas vendas[TF], int &tlv , TpVendasProduto venpro[TF], in
 		gotoxy(40,6);
 		printf("### EXCLUIR VENDAS ###");
 		gotoxy(30,8);
-	    printf("Digite o Código da Venda que deseja excluir:");
+	    printf("Digite o Cï¿½digo da Venda que deseja excluir:");
 	    gotoxy(30,9);
 		scanf("%d",&auxcod);
 	    while(auxcod > 0 && tlv > 0)
@@ -2413,7 +2413,7 @@ void ExcluirVenda(TpVendas vendas[TF], int &tlv , TpVendasProduto venpro[TF], in
 	        if(b == -1)
 	        {
 	        	gotoxy(13,23);
-	        	printf("Venda não encontrada!");
+	        	printf("Venda nï¿½o encontrada!");
 	        	getch();
 	        	LimparMensagem();
 			}
@@ -2421,7 +2421,7 @@ void ExcluirVenda(TpVendas vendas[TF], int &tlv , TpVendasProduto venpro[TF], in
 	        else
 	        {
 	        	gotoxy(30,10);
-	            printf("Código Venda:%d",vendas[b].CodVenda);
+	            printf("Cï¿½digo Venda:%d",vendas[b].CodVenda);
 	            gotoxy(30,11);
 	            printf("CPF:%s",vendas[b].CPFCli);
 	            gotoxy(30,12);
@@ -2435,7 +2435,7 @@ void ExcluirVenda(TpVendas vendas[TF], int &tlv , TpVendasProduto venpro[TF], in
 	            printf("TotVenda:%.2f",vendas[b].TotVendas);
 	            
 				gotoxy(30,14);
-	            printf("Confirma a exclusão? [S/N]");
+	            printf("Confirma a exclusï¿½o? [S/N]");
 	            if(toupper(getch()) == 'S')
 	            {
 					strcpy(auxCPF,vendas[b].CPFCli);
@@ -2453,7 +2453,7 @@ void ExcluirVenda(TpVendas vendas[TF], int &tlv , TpVendasProduto venpro[TF], in
 						vendas[i].CodVenda -=1;
 						
 					gotoxy(13,23);
-					printf("Venda Excluída Com Sucesso!");
+					printf("Venda Excluï¿½da Com Sucesso!");
 					getch();
 					LimparMensagem();
 				  }   
@@ -2462,7 +2462,7 @@ void ExcluirVenda(TpVendas vendas[TF], int &tlv , TpVendasProduto venpro[TF], in
 
 	       	Limpar(28,7,79,21);
 			gotoxy(30,8);
-	        printf("Digite o Código da Venda que deseja excluir:");
+	        printf("Digite o Cï¿½digo da Venda que deseja excluir:");
 	        gotoxy(30,9);
 	        scanf("%d",&auxcod);
 	    }
@@ -2550,11 +2550,11 @@ char MenuAlterarProd(void)
 	gotoxy(6,7);
 	printf("### MENU ALTERAR ###");
 	gotoxy(3,9);
-	printf("[A]- Alterar Descrição");
+	printf("[A]- Alterar Descriï¿½ï¿½o");
 	gotoxy(3,11);
 	printf("[B]- Alterar Estoque");
 	gotoxy(3,13);
-	printf("[C]- Alterar Preço");
+	printf("[C]- Alterar Preï¿½o");
 	gotoxy(3,15);
 	printf("[D]- Alterar Validade");
 	gotoxy(3,17);
@@ -2572,23 +2572,23 @@ void AlterarDescrProd(TpProdutos Produtos[TF], int tlp)
 	{
 		Limpar(28,5,79,21);	
 		gotoxy(40,6);
-		printf("### Alterar Descrição ###");
+		printf("### Alterar Descriï¿½ï¿½o ###");
 		gotoxy(30,8);
-		printf("Digite o código do produto:");
+		printf("Digite o cï¿½digo do produto:");
 		gotoxy(30,9);
 		scanf("%d",&auxcod);
 		a=BuscaCod(Produtos,tlp,auxcod);
 		if(a == -1)
 		{
 			gotoxy(13,23);
-			printf("Produto não encontrado!");
+			printf("Produto nï¿½o encontrado!");
 			getch();
 			LimparMensagem();
 			}	
 		else
 		{
 			gotoxy(30,10);
-			printf("Digite a nova Descrição:");
+			printf("Digite a nova Descriï¿½ï¿½o:");
 			gotoxy(30,11);
 			fflush(stdin);
 			gets(auxdescr);
@@ -2598,7 +2598,7 @@ void AlterarDescrProd(TpProdutos Produtos[TF], int tlp)
 			{
 				strcpy(Produtos[a].Descr,auxdescr);
 				gotoxy(13,23);
-				printf("Alteração Concluída!");
+				printf("Alteraï¿½ï¿½o Concluï¿½da!");
 				getch();
 				LimparMensagem();
 			}
@@ -2641,12 +2641,12 @@ void AlterarEstoqueProd(TpProdutos Produtos[TF], int tlp)
 			if(auxest > 0)
 			{
 				gotoxy(30,12);
-				printf("Deseja concluir a Alteração?[S/N]");
+				printf("Deseja concluir a Alteraï¿½ï¿½o?[S/N]");
 				if(toupper(getch()) == 'S')
 				{
 					Produtos[a].Estoque = auxest;
 					gotoxy(13,23);
-					printf("Alteracao Concluída!");
+					printf("Alteracao Concluï¿½da!");
 					getch();
 					LimparMensagem();
 				}
@@ -2654,7 +2654,7 @@ void AlterarEstoqueProd(TpProdutos Produtos[TF], int tlp)
 			else
 			{
 				gotoxy(13,23);
-				printf("Quantidade Inválida!");
+				printf("Quantidade Invï¿½lida!");
 				getch();
 				LimparMensagem();
 			}
@@ -2674,16 +2674,16 @@ void AlterarPrecoProd(TpProdutos Produtos[TF], int tlp)
 	{
 		Limpar(28,5,79,21);	
 		gotoxy(40,6);
-		printf("### ALTERAR PREÇO ###");
+		printf("### ALTERAR PREï¿½O ###");
 		gotoxy(30,8);
-		printf("Digite o código do produto:");
+		printf("Digite o cï¿½digo do produto:");
 		gotoxy(30,9);
 		scanf("%d",&auxcod);
 		a=BuscaCod(Produtos,tlp,auxcod);
 		if(a == -1)
 		{
 			gotoxy(13,23);
-			printf("Produto não encontrado!");
+			printf("Produto nï¿½o encontrado!");
 			getch();
 			LimparMensagem();
 		}
@@ -2691,18 +2691,18 @@ void AlterarPrecoProd(TpProdutos Produtos[TF], int tlp)
 		else
 		{
 			gotoxy(30,10);
-			printf("Digite o novo preço:");
+			printf("Digite o novo preï¿½o:");
 			gotoxy(30,11);
 			scanf("%f",&auxpre);
 			if(auxpre > 000)
 			{
 				gotoxy(30,12);
-				printf("Deseja concluir a Alteração?[S/N]");
+				printf("Deseja concluir a Alteraï¿½ï¿½o?[S/N]");
 				if(toupper(getch()) == 'S')
 				{
 					Produtos[a].Preco = auxpre;
 					gotoxy(13,23);
-					printf("Alteração Concluída!");
+					printf("Alteraï¿½ï¿½o Concluï¿½da!");
 					getch();
 					LimparMensagem();
 					
@@ -2711,7 +2711,7 @@ void AlterarPrecoProd(TpProdutos Produtos[TF], int tlp)
 			else
 			{
 				gotoxy(13,23);
-				printf("Quantidade Inválida!");
+				printf("Quantidade Invï¿½lida!");
 				getch();
 				LimparMensagem();
 			}	
@@ -2732,14 +2732,14 @@ void AlterarDataProd(TpProdutos Produtos[TF], int tlp)
 		gotoxy(40,6);
 		printf("### ALTERAR DATA ###");
 		gotoxy(30,8);
-		printf("Digite o código do produto:");
+		printf("Digite o cï¿½digo do produto:");
 		gotoxy(30,9);
 		scanf("%d",&auxcod);
 		a=BuscaCod(Produtos,tlp,auxcod);
 		if(a == -1)
 		{
 			gotoxy(13,23);
-			printf("Produto não encontrado!");
+			printf("Produto nï¿½o encontrado!");
 			getch();
 			LimparMensagem();
 			}	
@@ -2762,14 +2762,14 @@ void AlterarDataProd(TpProdutos Produtos[TF], int tlp)
 			if(b != -1)
 			{
 				gotoxy(30,12);
-				printf("Deseja concluir a Alteração?[S/N]");
+				printf("Deseja concluir a Alteraï¿½ï¿½o?[S/N]");
 				if(toupper(getch()) == 'S')
 				{
 					Produtos[a].DtValidade.Dia = auxd;
 					Produtos[a].DtValidade.Mes = auxm;
 					Produtos[a].DtValidade.Ano = auxa;
 					gotoxy(13,23);
-					printf("Alteração Concluída!");
+					printf("Alteraï¿½ï¿½o Concluï¿½da!");
 					getch();
 					LimparMensagem();
 				}	
@@ -2829,16 +2829,16 @@ void AlterarNomeForn(TpFornecedores Forn[TF], int tlf)
 	{
 		Limpar(28,5,79,21);
 		gotoxy(40,6);
-		printf("### ALTERAR CÓDIGO ###");
+		printf("### ALTERAR Cï¿½DIGO ###");
 		gotoxy(30,8);
-		printf("Digite o código do fornecedor:");
+		printf("Digite o cï¿½digo do fornecedor:");
 		gotoxy(30,9);
 		scanf("%d",&auxcod);
 		a=BuscaForn(Forn,tlf,auxcod);
 		if(a == -1)
 		{
 			gotoxy(13,23);
-			printf("Produto não encontrado!");
+			printf("Produto nï¿½o encontrado!");
 			getch();
 			LimparMensagem();
 		}
@@ -2851,12 +2851,12 @@ void AlterarNomeForn(TpFornecedores Forn[TF], int tlf)
 			fflush(stdin);
 			gets(auxnome);
 			gotoxy(30,12);
-			printf("Deseja concluir a Alteração?[S/N]");
+			printf("Deseja concluir a Alteraï¿½ï¿½o?[S/N]");
 			if(toupper(getch()) == 'S')
 			{
 				strcpy(Forn[a].NomeForn,auxnome);
 				gotoxy(13,23);
-				printf("Alteração Concluída!");
+				printf("Alteraï¿½ï¿½o Concluï¿½da!");
 				getch();
 				LimparMensagem();
 			}
@@ -2877,14 +2877,14 @@ void AlterarCidadeForn(TpFornecedores Forn [TF], int tlf)
 		gotoxy(40,6);
 		printf("### ALTERAR NOME ###");
 		gotoxy(30,8);
-		printf("Digite o código do fornecedor:");
+		printf("Digite o cï¿½digo do fornecedor:");
 		gotoxy(30,9);
 		scanf("%d",&auxcod);
 		a=BuscaForn(Forn,tlf,auxcod);
 		if(a == -1)
 		{
 			gotoxy(13,23);
-			printf("Produto não encontrado!");
+			printf("Produto nï¿½o encontrado!");
 			getch();
 			LimparMensagem();
 		}
@@ -2897,12 +2897,12 @@ void AlterarCidadeForn(TpFornecedores Forn [TF], int tlf)
 			fflush(stdin);
 			gets(auxcid);
 			gotoxy(30,12);
-			printf("Deseja concluir a Alteração?[S/N]");
+			printf("Deseja concluir a Alteraï¿½ï¿½o?[S/N]");
 			if(toupper(getch()) == 'S')
 			{
 				strcpy(Forn[a].Cidade,auxcid);
 				gotoxy(13,23);
-				printf("Alteração Concluída!");
+				printf("Alteraï¿½ï¿½o Concluï¿½da!");
 				getch();
 				LimparMensagem();
 			}
@@ -2932,7 +2932,7 @@ void AlterarCliente(TpClientes cli[TF], int tlc)
 		if(a == -1)
 		{
 			gotoxy(13,23);
-			printf("Cliente não encontrado!");
+			printf("Cliente nï¿½o encontrado!");
 			getch();
 			LimparMensagem();
 		}
@@ -2945,12 +2945,12 @@ void AlterarCliente(TpClientes cli[TF], int tlc)
 			fflush(stdin);
 			gets(auxnome);
 			gotoxy(30,12);
-			printf("Deseja Concluir a Alteração?[S/N]");
+			printf("Deseja Concluir a Alteraï¿½ï¿½o?[S/N]");
 			if(toupper(getch()) == 'S')
 			{
 				strcpy(cli[a].NomeCli,auxnome);
 				gotoxy(13,23);
-				printf("Alteração Concluída!");
+				printf("Alteraï¿½ï¿½o Concluï¿½da!");
 				getch();
 				LimparMensagem();
 			}
@@ -3037,6 +3037,6 @@ int contagemVendas(TpVendasProduto venpro[TF], int tlvp, int aux)
 }
 
 
-//BSI - 2º Termo
+//BSI - 2ï¿½ Termo
 // Caio Henrique Aranda Sumida
-// João Vitor Santos Martins
+// Joï¿½o Vitor Santos Martins
